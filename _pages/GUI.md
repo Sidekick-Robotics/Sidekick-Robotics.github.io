@@ -7,7 +7,6 @@ nav: true
 nav_order: 4
 ---
 <h1>GUI</h1>
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0" href="/STEM">
         {% include figure.liquid loading="eager" path="assets/img/sidekick_no_string.jpg" title="sidekickkkkkkkkkk" class="img-fluid rounded z-depth-1" %}
