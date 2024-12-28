@@ -10,10 +10,17 @@ profile:
 ---
 <div class="row" id="about">
     <div class="col-sm mt-2 mt-md-0">
-        {%  include figure.liquid
-            loading="eager"
-            path="assets/img/GUI_Demo.png"
-        %}
+        <div class="focus">
+            <div class="information" id="hardware">
+                <h1>Hardware</h1>
+            </div>
+            <div class="information" id="software">
+                <h1>Software</h1>
+            </div>
+            <div class="information" id="firmware">
+                <h1>Firmware</h1>
+            </div>
+        </div>
     </div>
     <div class="col-sm mt-2 mt-md-0" id="our-vision">
         <h1>Our vision</h1>
