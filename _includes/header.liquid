@@ -41,13 +41,13 @@
       </button>
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
-        <ul class="navbar-nav ml-auto flex-nowrap">
+        <ul class="navbar-nav nav-buttons flex-nowrap">
           {% for page in site.pages %}
             {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
           {% endfor %}
 
           <!-- About -->
-          <!--<li class="nav-item {% if page.permalink == '/' %}active{% endif %} {{- about_title }}">
+          <!-- <li class="nav-item {% if page.permalink == '/' %}active{% endif %} {{- about_title }}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
               {{- about_title }}
               {% if page.permalink == '/' %}
@@ -98,11 +98,10 @@
                 {% assign parent_link = p.permalink | remove: 'index.html' %}
                 <li class="nav-item {% if page.url contains parent_link %}active{% endif %}" >
                   {% if p.permalink contains '/blog/' %}{% assign url = '/blog/' %} {% else %}{% assign url = p.url %}{% endif %}
-                  <div class="button_container">
-                    <a class="nav-link img_button" href="{{ '#' | append: p.title | append: '_info' }}"  id="{{ p.title }}" >
+                  <div class="button_container" id="{{ p.title }}">
+                    <a class="nav-link" href="{{ '#' | append: p.title | append: '_info' }}">
                     {{- p.title }}
                     </a>
-
                   </div>
                 </li>
               {% endif %}

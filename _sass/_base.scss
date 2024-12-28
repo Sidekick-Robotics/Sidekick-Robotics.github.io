@@ -691,9 +691,6 @@ footer.sticky-bottom {
     li {
       margin-bottom: 1rem;
 
-      .preview {
-      }
-
       .abbr {
         margin-bottom: 0.5rem;
 
@@ -1337,63 +1334,74 @@ ninja-keys::part(ninja-input-wrapper) {
   
 }
 
-.button_container{
-  height: 60px;           /* make this the size of your image */
-  width: 60px;
-  padding-top: 6px;
-  padding-bottom: 3px;
-}
-
-.video{
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 56%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-  border: none;
-
-}
-
-#GUI {
-  background-image: url(/assets/img/Stem_logo_GUI_website.svg); /* 16px x 16px */
-  background-position: 50% 1%;
-
-}
-
-#STEM {
-  
-  background-image: url(/assets/img/Stem_logo_website.svg); /* 16px x 16px */
-  background-position: 50% 1%;
-
-}
-
-#ConsciOS {
-  
-  background-image: url(/assets/img/Stem_logo_Consc_website.svg); /* 16px x 16px */
-  background-position: 90% 1%;
-  text-align: left;
-
-}
-
-#headderVideo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
 
 body  {
-  background-image: url(/assets/img/largeWebsiteBackground.svg);
+  // background-image: url(/assets/img/largeWebsiteBackground.svg);
   // background-repeat: repeat-x;
   // background-repeat: repeat-y;
   // background-size: 100% 100%;
-  background-size: cover;
+  // background-size: cover;
+
+  // Alex's work
+  background-color: #2d2d2e;
+  font-family: "Varela Round", sans-serif;
+  font-size: 150%;
 }
 
-body {
-  font-family: "Varela Round", sans-serif;
+.intro {
+  width: 40%;
+  margin: 0 auto;
+  /*margin-top: 5%;
+  margin-bottom: 10%;
+  border-radius: 50%;
+  border: 2px solid #00f0c3;
+  box-shadow: 0 0 10px #00f0c3,  /* Inner white glow for intensity */
+               /*0 0 30px #00f0c3;
+  padding: 5%;*/
+  margin-bottom: 10%;
+}
 
+.logo {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 10%;
+  border: none;
+}
+
+#slogan {
+  text-align: center;
+  font-size: 230%;
+  font-weight: bold;
+}
+
+#about {
+  margin-bottom: 10%;
+}
+
+#STEM {
+  padding-right: 10%;
+}
+
+#GUI {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#ConsciOS {
+  padding-left: 10%;
+}
+
+.nav-buttons {
+  vertical-align: middle;
+  padding-top: 10px;
+}
+
+.banner {
+  background-image:
+      linear-gradient(to bottom, rgba(255,255,255,0), #2c2c2d),
+      url('/assets/img/close_up.png'); /* Replace with your image path */
+  background-repeat: no-repeat;
+  background-position: center center; /* Center the image */
+  background-size: 100% auto; /* Scale the image to fill height; width automatically adjusts to maintain aspect ratio */
+  overflow: hidden;
 }
