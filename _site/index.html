@@ -304,26 +304,17 @@
     <div class="clearfix">
 <div class="row" id="about">
     <div class="col-sm mt-2 mt-md-0">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/GUI_Demo-480.webp 480w,/assets/img/GUI_Demo-800.webp 800w,/assets/img/GUI_Demo-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
-    
-    <img src="/assets/img/GUI_Demo.png" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-  </picture>
-
-  
-</figure>
-
+        <div class="focus">
+            <div class="information" id="hardware">
+                <h1>Hardware</h1>
+            </div>
+            <div class="information" id="software">
+                <h1>Software</h1>
+            </div>
+            <div class="information" id="firmware">
+                <h1>Firmware</h1>
+            </div>
+        </div>
     </div>
     <div class="col-sm mt-2 mt-md-0" id="our-vision">
         <h1>Our vision</h1>
