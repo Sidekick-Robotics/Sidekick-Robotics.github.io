@@ -19,7 +19,20 @@
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
     <!-- Header -->
     {% include header.liquid %}
-
+    <!-- Intro -->
+    <div class="banner">
+      <div class="intro">
+        <div class="logo">
+            {%  include figure.liquid
+                loading="eager"
+                path="assets/img/SK_logo.png"
+            %}
+        </div>
+        <div id="slogan">
+            <p>Robotics prototyping made easy</p>
+        </div>
+      </div>
+    </div>
     <!-- Content -->
     <div class="container mt-5" role="main">
       {% if page.toc and page.toc.sidebar %}

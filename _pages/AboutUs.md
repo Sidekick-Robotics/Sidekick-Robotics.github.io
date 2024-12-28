@@ -8,17 +8,6 @@ profile:
   image_circular: false # crops the image to make it circular
   social: false # includes social icons at the bottom of the page
 ---
-<div class="intro">
-    <div class="logo">
-        {%  include figure.liquid
-            loading="eager"
-            path="assets/img/SK_logo.png"
-        %}
-    </div>
-    <div id="slogan">
-        <p>Robotics prototyping made easy</p>
-    </div>
-</div>
 <div class="row" id="about">
     <div class="col-sm mt-2 mt-md-0">
         {%  include figure.liquid
@@ -27,7 +16,7 @@ profile:
         %}
     </div>
     <div class="col-sm mt-2 mt-md-0" id="our-vision">
-        <h2>Our vision</h2>
+        <h1>Our vision</h1>
         <p>Robotics prototyping can be a tedious process with many hours being wasted debugging problems that shouldn't be of concern. SideKick provides an ecosystem in which hardware, software, and firmware are all designed to work seamlessly together to provide an easy to use platform which allows for easy debugging.</p>
     </div>
 </div>

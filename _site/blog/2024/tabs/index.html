@@ -105,7 +105,7 @@
       </button>
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
-        <ul class="navbar-nav ml-auto flex-nowrap">
+        <ul class="navbar-nav nav-buttons flex-nowrap">
           
 
           <!-- About -->
@@ -250,7 +250,36 @@
   
 </header>
 
+    <!-- Intro -->
+    <div class="banner">
+      <div class="intro">
+        <div class="logo">
+            
 
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/SK_logo-480.webp 480w,/assets/img/SK_logo-800.webp 800w,/assets/img/SK_logo-1400.webp 1400w," type="image/webp" sizes="95vw">
+    
+    <img src="/assets/img/SK_logo.png" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </source></picture>
+
+  
+</figure>
+
+        </div>
+        <div id="slogan">
+            <p>Robotics prototyping made easy</p>
+        </div>
+      </div>
+    </div>
     <!-- Content -->
     <div class="container mt-5" role="main">
       
@@ -333,7 +362,7 @@ Content 2
 
 <p>With this you can generate visualizations like:</p>
 
-<ul id="log" class="tab" data-tab="37c8fd43-8f36-4b0d-8549-50917e852263" data-name="log">
+<ul id="log" class="tab" data-tab="670b50b5-0c29-4d99-a067-bd6b1dbf165e" data-name="log">
   
       <li class="active" id="log-php">
           <a href="#">php </a>
@@ -348,7 +377,7 @@ Content 2
       </li>
   
 </ul>
-<ul class="tab-content" id="37c8fd43-8f36-4b0d-8549-50917e852263" data-name="log">
+<ul class="tab-content" id="670b50b5-0c29-4d99-a067-bd6b1dbf165e" data-name="log">
   
       <li class="active">
 <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">var_dump</span><span class="p">(</span><span class="s1">'hello'</span><span class="p">);</span>
@@ -372,7 +401,7 @@ Content 2
 
 <h2 id="another-example">Another example</h2>
 
-<ul id="data-struct" class="tab" data-tab="0923e17c-9d72-435b-bc63-ece450e0b714" data-name="data-struct">
+<ul id="data-struct" class="tab" data-tab="e213cb18-bbce-48c0-a900-cab57e9f6b73" data-name="data-struct">
   
       <li class="active" id="data-struct-yaml">
           <a href="#">yaml </a>
@@ -383,7 +412,7 @@ Content 2
       </li>
   
 </ul>
-<ul class="tab-content" id="0923e17c-9d72-435b-bc63-ece450e0b714" data-name="data-struct">
+<ul class="tab-content" id="e213cb18-bbce-48c0-a900-cab57e9f6b73" data-name="data-struct">
   
       <li class="active">
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">hello</span><span class="pi">:</span>
@@ -405,7 +434,7 @@ Content 2
 
 <h2 id="tabs-for-something-else">Tabs for something else</h2>
 
-<ul id="something-else" class="tab" data-tab="348ec6a6-ba1c-4491-9887-77a99dc4896a" data-name="something-else">
+<ul id="something-else" class="tab" data-tab="cf9fe72f-86a2-413b-8e43-dc1c17bbc69a" data-name="something-else">
   
       <li class="active" id="something-else-text">
           <a href="#">text </a>
@@ -420,7 +449,7 @@ Content 2
       </li>
   
 </ul>
-<ul class="tab-content" id="348ec6a6-ba1c-4491-9887-77a99dc4896a" data-name="something-else">
+<ul class="tab-content" id="cf9fe72f-86a2-413b-8e43-dc1c17bbc69a" data-name="something-else">
   
       <li class="active">
 <p>Regular text</p>
