@@ -1334,12 +1334,6 @@ ninja-keys::part(ninja-input-wrapper) {
   
 }
 
-.button_container{
-  height: 60px;           /* make this the size of your image */
-  width: 60px;
-  padding-top: 6px;
-  padding-bottom: 3px;
-}
 
 body  {
   // background-image: url(/assets/img/largeWebsiteBackground.svg);
@@ -1355,9 +1349,16 @@ body  {
 }
 
 .intro {
-  width: 75%;
+  width: 60%;
   margin: 0 auto;
-  margin-bottom: 20%;
+  /*margin-top: 5%;
+  margin-bottom: 10%;
+  border-radius: 50%;
+  border: 2px solid #00f0c3;
+  box-shadow: 0 0 10px #00f0c3,  /* Inner white glow for intensity */
+               /*0 0 30px #00f0c3;
+  padding: 5%;*/
+  margin-bottom: 10%;
 }
 
 .logo {
@@ -1377,10 +1378,15 @@ body  {
   margin-bottom: 10%;
 }
 
-.button_container {
-  margin-top: 20%;
+#STEM {
+  padding-right: 10%;
 }
 
 #GUI {
-  padding-left: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#ConsciOS {
+  padding-left: 10%;
 }
