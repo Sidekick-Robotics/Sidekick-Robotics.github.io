@@ -202,8 +202,8 @@
                 
                 <li class="nav-item ">
                   
-                  <div class="button_container" id="GUI">
-                    <a class="nav-link" href="#GUI_info">GUI
+                  <div class="button_container" id="SideKick">
+                    <a class="nav-link" href="#SideKick_info">SideKick
                     </a>
                   </div>
                 </li>
@@ -303,27 +303,50 @@
 
     <div class="clearfix">
 <div class="row" id="about">
-    <div class="col-sm mt-2 mt-md-0">
-        <div class="focus">
-            <div class="information" id="hardware">
-                <h1>Hardware</h1>
-            </div>
-            <div class="information" id="software">
-                <h1>Software</h1>
-            </div>
-            <div class="information" id="firmware">
-                <h1>Firmware</h1>
-            </div>
-        </div>
+    <div class="col-sm mt-2 mt-md-0" id="v-centered-img">
+        
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/GUI_Demo-480.webp 480w,/assets/img/GUI_Demo-800.webp 800w,/assets/img/GUI_Demo-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
+    
+    <img src="/assets/img/GUI_Demo.jpg" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
     </div>
     <div class="col-sm mt-2 mt-md-0" id="our-vision">
         <h1>Our vision</h1>
         <p>Robotics prototyping can be a tedious process with many hours being wasted debugging problems that shouldn't be of concern. SideKick provides an ecosystem in which hardware, software, and firmware are all designed to work seamlessly together to provide an easy to use platform which allows for easy debugging.</p>
+        <p><span class="keyword">Hardware </span>is a key part of robotics and one of the hardest aspects to debug. <span class="keyphrase">Our STEM PCB offers an elegant all-in-one solution</span> with sensors, data logging, and many actuator-ready outputs.</p>
+        <p><span class="keyword">Software </span>provides a method of displaying data.The SideKick app allows you to: display graphs in real time; output data to a terminal; record live data; manage your devices and more.</p>
+        <p><span class="keyword">Firmware </span>connects everything together, it allows the robot to be controlled by hardware and output data. The ConsciOS firmware is an easy-to-use C++ framework that allows for easy state management; macros for graphing and recording data; and a selection of libraries to perform most calculations for robotics.</p>
     </div>
 </div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0" href="/STEM">
-        
+<div class="stem" id="STEM_info">
+    <div class="row" id="stem-card">
+        <div class="col-sm mt-2 mt-md-0 stem" id="stem-info">
+            <div id="stem-info-2">
+                <p id="stem-name">SideKick STEM</p>
+                <p id="stem-description">The ultimate robotics prototyping PCB.</p>
+                <a id="stem-button">
+                    Find out more.
+                </a>
+            </div>
+        </div>
+        <div class="col-sm mt-2 mt-md-0 stem" id="v-centered-img">
+            <div id="stem-img">
+                
 
 
 
@@ -335,216 +358,29 @@
       https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
     -->
     
-      <source class="responsive-img-srcset" srcset="/assets/img/sidekick_no_string-480.webp 480w,/assets/img/sidekick_no_string-800.webp 800w,/assets/img/sidekick_no_string-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
+      <source class="responsive-img-srcset" srcset="/assets/img/STEM_transparent_aura-480.webp 480w,/assets/img/STEM_transparent_aura-800.webp 800w,/assets/img/STEM_transparent_aura-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
     
-    <img src="/assets/img/sidekick_no_string.jpg" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/STEM_transparent_aura.png" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
   </picture>
 
   
 </figure>
 
+            </div>
+        </div>
     </div>
-    <div class="col-sm mt-3 mt-md-0" href="/GUI">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/GUI_main.JPG" sizes="95vw"></source>
-    
-    <img src="/assets/img/GUI_main.JPG" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-  </picture>
-
-  
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0" href="/GUI">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/Loading_Screen-480.webp 480w,/assets/img/Loading_Screen-800.webp 800w,/assets/img/Loading_Screen-1400.webp 1400w," type="image/webp" sizes="95vw"></source>
-    
-    <img src="/assets/img/Loading_Screen.png" width="100%" height="auto" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-  </picture>
-
-  
-</figure>
-
+    <div class="row">
+        <h1>STEM</h1>
+        <ul>
+        <li>12 Servo Connections</li>
+        <li>BMI088 Gyroscope and Accelerometer</li>
+        <li>BMP280 Barometer</li>
+        <li>SD Card for data collection</li>
+        <li>Multi coloured statusLED</li>
+        </ul>
+        <p>Our robotics-focused PCB removes many common areas of debugging by providing a suite of input and output devices which are common in many robotics projects.</p>
     </div>
 </div>
-<div class="caption">
-   you want to learn how to code, not how to speck out pull up resistors and fix JST connectors
-</div>
-
-<div class="row">
-    <h1>SIGN UP</h1>
-    <br>
-    <p>
-    Sign up with the interest form here:
-    </p>
- </div>
-<div class="row" id="STEM_info">
-    <h1>STEM</h1>
- </div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/sidekick_close_2.JPG" sizes="95vw"></source>
-    
-    <img src="/assets/img/sidekick_close_2.JPG" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="give us your money" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-  </picture>
-
-  
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    you know you want to buy it
-</div>
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/sidekick_back.JPG" sizes="95vw"></source>
-    
-    <img src="/assets/img/sidekick_back.JPG" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="you know you want it" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-  </picture>
-
-  
-</figure>
-
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/sidekick_side_on.JPG" sizes="95vw"></source>
-    
-    <img src="/assets/img/sidekick_side_on.JPG" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="example image" loading="lazy" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-  </picture>
-
-  
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    The RP2040 board has an BMI088, barometer and several servo controllers
-</div>
-<p>
- ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure repreh
-</p>
-<div class="row" id="GUI_info">
-    <h1>GUI</h1>
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/GIU_and_test_stand_2.JPG" sizes="95vw"></source>
-    
-    <img src="/assets/img/GIU_and_test_stand_2.JPG" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="give us your money" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-  </picture>
-
-  
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    you know you want to buy it
-</div>
-<h3>Clone GUI on github now!</h3>
-<h4> button that works </h4>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        
-
-
-
-<figure>
-  <picture>
-    <!-- Auto scaling with imagemagick -->
-    <!--
-      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
-      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
-    -->
-    
-      <source class="responsive-img-srcset" srcset="/assets/img/GUI_main.JPG" sizes="95vw"></source>
-    
-    <img src="/assets/img/GUI_main.JPG" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="give us your money" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-  </picture>
-
-  
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    you know you want to buy it
-</div>
-<p>information about why sidekick is cool</p>
-<div class="row" id="ConsciOS_info">
-    <h1>ConsciOS</h1>
- </div>
 </div>
 
     <!-- News -->
@@ -579,7 +415,7 @@
 
       
       
-        Last updated: December 28, 2024.
+        Last updated: December 29, 2024.
       
     </div>
   </footer>

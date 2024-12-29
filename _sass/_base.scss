@@ -1334,20 +1334,6 @@ ninja-keys::part(ninja-input-wrapper) {
   
 }
 
-
-body  {
-  // background-image: url(/assets/img/largeWebsiteBackground.svg);
-  // background-repeat: repeat-x;
-  // background-repeat: repeat-y;
-  // background-size: 100% 100%;
-  // background-size: cover;
-
-  // Alex's work
-  background-color: #2d2d2e;
-  font-family: "Varela Round", sans-serif;
-  font-size: 150%;
-}
-
 .intro {
   width: 40%;
   margin: 0 auto;
@@ -1364,18 +1350,62 @@ body  {
 .logo {
   width: 50%;
   margin: 0 auto;
-  margin-bottom: 10%;
+  margin-bottom: 13%;
   border: none;
 }
 
-#slogan {
-  text-align: center;
-  font-size: 230%;
+.nav-link {
+  font-size: 130%;
   font-weight: bold;
+  color: #ffffff;
+}
+
+#slogan {
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+body  {
+  background-color: #2d2d2e;
+  font-family: "Varela Round", sans-serif;
+  font-size: 125%;
+}
+
+@media (min-width: 1025px) { 
+  #slogan {
+    font-size: 300% !important;
+  }
+}
+
+@media (max-width: 1025px) { 
+  .logo {
+    display: none;
+  }
+
+  .intro {
+    width: 100% !important;
+  }
+
+  #slogan {
+    margin-top: 10%;
+    font-size: 200% !important;
+  }
+
+  body {
+    font-size: 80%;
+  }
+
+  h1 {
+    font-size: 150%;
+  }
 }
 
 #about {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
+  scroll-margin-top: 10vh;
 }
 
 #STEM {
@@ -1425,4 +1455,66 @@ body  {
 
 #our-vision {
   padding-left: 5%;
+}
+
+#stem-img {
+  width: 80%;
+  padding: 5% 10%;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.keyword {
+  font-size: 150%;
+}
+
+.keyphrase {
+  font-weight: bold;
+}
+
+#v-centered-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#stem-card {
+  border-radius: 15px;
+  background-color: #1c1c1d;
+  margin-bottom: 100%;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+.stem {
+  scroll-margin-top: 10vh;
+}
+
+#stem-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#stem-info-2 {
+  width: 100%;
+  padding-left: 20%;
+}
+
+#stem-name {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+#stem-description {
+  text-align: left;
+  font-size: 140%;
+}
+
+#stem-button {
+  background-color: #e8e8e8;
+  color: #1c1c1d;
+  border-radius: 15px;
+  padding: 10px 30px;
+  font-size: 140%;
 }
