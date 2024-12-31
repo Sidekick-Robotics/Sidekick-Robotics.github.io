@@ -1487,7 +1487,7 @@ body  {
 #stem-card {
   border-radius: 15px;
   background-color: #1c1c1d;
-  margin-bottom: 100%;
+  margin-bottom: 5%;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
 }
 
@@ -1506,12 +1506,12 @@ body  {
   padding-left: 20%;
 }
 
-#stem-name {
+.key-name {
   font-size: 200%;
   font-weight: bold;
 }
 
-#stem-description {
+.key-description {
   text-align: left;
   font-size: 140%;
 }
@@ -1522,4 +1522,17 @@ body  {
   border-radius: 15px;
   padding: 10px 30px;
   font-size: 140%;
+}
+
+.gui {
+  scroll-margin-top: 10vh;
+}
+
+.grid-2-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Creates two columns */
+  grid-template-rows: auto auto;  /* Two rows, size adjusts based on content */
+  gap: 10px;                     /* Space between images */
+  width: 100%;                   /* Optional: Adjust based on requirement */
+  margin: auto;
 }
