@@ -19,7 +19,8 @@
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
     <!-- Header -->
     {% include header.liquid %}
-    <!-- Intro -->
+    <!-- Home page banner -->
+    {% if page.title == 'Home' %}
     <div class="banner">
       <div class="intro">
         <div class="logo">
@@ -28,11 +29,12 @@
                 path="assets/img/SK_logo.png"
             %}
         </div>
-        <div id="slogan">
-            <p>Robotics prototyping made easy</p>
+        <div>
+            <p id="slogan">Robotics prototyping made easy</p>
         </div>
       </div>
     </div>
+    {% endif %}
     <!-- Content -->
     <div class="container mt-5" role="main">
       {% if page.toc and page.toc.sidebar %}

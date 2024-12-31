@@ -1,6 +1,6 @@
 ---
 layout: about
-title: About us
+title: Home
 permalink: /
 profile:
   align: right
@@ -17,7 +17,7 @@ profile:
     </div>
     <div class="col-sm mt-2 mt-md-0" id="our-vision">
         <h1>Our vision</h1>
-        <p>Robotics prototyping can be a tedious process with many hours being wasted debugging problems that shouldn't be of concern. SideKick provides an ecosystem in which hardware, software, and firmware are all designed to work seamlessly together to provide an easy to use platform which allows for easy debugging.</p>
+        <p>Robotics prototyping can be a tedious process with many hours being wasted debugging problems that shouldn't be of concern. <span class="keyphrase">SideKick provides an ecosystem in which hardware, software, and firmware are all designed to work seamlessly together </span>to provide an easy to use platform which allows for easy debugging.</p>
         <p><span class="keyword">Hardware </span>is a key part of robotics and one of the hardest aspects to debug. <span class="keyphrase">Our STEM PCB offers an elegant all-in-one solution</span> with sensors, data logging, and many actuator-ready outputs.</p>
         <p><span class="keyword">Software </span>provides a method of displaying data.<span class="keyphrase">The SideKick app allows you to: display graphs in real time</span>; output data to a terminal; <span class="keyphrase">record live data</span>; manage your devices <span class="keyphrase">and more.</span></p>
         <p><span class="keyword">Firmware </span>connects everything together, it allows the robot to be controlled by hardware and output data. <span class="keyphrase">The ConsciOS firmware is an easy-to-use C++ framework</span> that allows for easy state management; macros for graphing and recording data; and a selection of libraries to perform most calculations for robotics.</p>
@@ -29,7 +29,7 @@ profile:
             <div id="stem-info-2">
                 <p class="key-name">SideKick STEM</p>
                 <p class="key-description">The ultimate robotics prototyping PCB.</p>
-                <a id="stem-button">Find out more.</a>
+                <a id="stem-button">Find out more</a>
             </div>
         </div>
         <div class="col-sm mt-2 mt-md-0 stem" id="v-centered-img">
@@ -42,14 +42,27 @@ profile:
         </div>
     </div>
 </div>
-<div class="gui" id="GUI_info">
+<div class="gui" id="SideKick_info">
     <div class="row" id="gui-card">
         <div class="col-sm mt-2 mt-md-0" id="gui-info">
             <h1>SideKick App</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a erat ac elit consectetur viverra. Sed sit amet purus sed risus laoreet tincidunt. Integer volutpat fringilla risus, ut aliquet odio egestas pulvinar. Nunc in finibus massa. Phasellus consequat tempor eros eu pulvinar. Maecenas bibendum libero risus, vel sodales mi viverra vitae. Maecenas eget ornare nisl.</p>
-            <p>Cras ante orci, maximus non nulla et, placerat facilisis erat. Morbi nisl mi, eleifend ut arcu rutrum, porta vehicula elit. Vestibulum finibus porttitor lacus eu vestibulum. Nullam urna ipsum, tristique quis nibh vitae, malesuada porttitor sapien. Nulla dui neque, malesuada quis commodo dictum, sollicitudin dapibus nisl. Integer ut dictum sapien. Cras hendrerit porta ante et semper. Nulla eu orci sed lectus gravida iaculis et in est. Suspendisse feugiat nunc in fringilla ornare. Etiam sit amet orci eget nisi convallis pretium. Sed sit amet placerat tortor, at viverra est.</p>
+            <div class="app-info">
+                <p><span class="keyword">Real time data display. </span>The SideKick app offers a terminal and multiple graphs to display data for easy analysis.</p>
+            </div>
+            <div class="app-info">
+                <p><span class="keyword">Dynamically add and control actuators. </span>Using the actuator-test feature, you can control any pwm-based actuator from your pc.</p>
+            </div>
+            <div class="app-info">
+                <p><span class="keyword">Record and export data. </span>You can record data for later analysis and export it to a .csv format for analysis in other programs such as excel.</p>
+            </div>
+            <div class="app-info">
+                <p><span class="keyword">Easy to read debugging. </span>While writing code for your embedded projects, errors are clearly identifiable via our terminal output. You can also enter any arduino cli command.</p>
+            </div>
+            <div id="gui-btn-margin">
+                <a id="gui-button">Find out more</a>
+            </div>
         </div>
-        <div class="col-sm mt-2 mt-md-0">
+        <div class="col-sm mt-2 mt-md-0" id="gui-img-centered">
             <div class="grid-2-2">
                 <div class="gui-stock">
                     {%  include figure.liquid

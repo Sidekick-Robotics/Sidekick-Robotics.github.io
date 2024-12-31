@@ -910,27 +910,23 @@ progress {
   border: none;
 
   /* Progress bar container for Firefox/IE10  */
-  background-color: transparent;
+  //background-color: transparent;
 
   /* Progress bar value for IE10  */
-  color: var(#00f0c3);
-}
-
-progress::-webkit-progress-bar {
-  background-color: transparent;
+  color: var(--global-theme-color);
 }
 
 progress::-webkit-progress-value {
-  background-color: var(#00f0c3);
+  background-color: var(--global-theme-color);
 }
 
 progress::-moz-progress-bar {
-  background-color: var(#00f0c3);
+  background-color: var(--global-theme-color);
 }
 
 .progress-container {
   width: 100%;
-  background-color: transparent;
+  //background-color: transparent;
   position: fixed;
   top: 56px;
   left: 0;
@@ -939,7 +935,7 @@ progress::-moz-progress-bar {
 }
 
 .progress-bar {
-  background-color: var(#00f0c3);
+  background-color: var(--global-theme-color);
   width: 0%;
   display: block;
   height: inherit;
@@ -1337,13 +1333,6 @@ ninja-keys::part(ninja-input-wrapper) {
 .intro {
   width: 40%;
   margin: 0 auto;
-  /*margin-top: 5%;
-  margin-bottom: 10%;
-  border-radius: 50%;
-  border: 2px solid #00f0c3;
-  box-shadow: 0 0 10px #00f0c3,  /* Inner white glow for intensity */
-               /*0 0 30px #00f0c3;
-  padding: 5%;*/
   margin-bottom: 10%;
 }
 
@@ -1357,19 +1346,11 @@ ninja-keys::part(ninja-input-wrapper) {
 .nav-link {
   font-size: 130%;
   font-weight: bold;
-  color: #ffffff;
-}
-
-#slogan {
-  margin: 0 auto;
-  justify-content: center;
-  text-align: center;
-  font-weight: bold;
-  font-size: 120%;
+  color: var(--global-text-color-light) !important;
 }
 
 body  {
-  background-color: #2d2d2e;
+  background-color: var(--global-bg-color);
   font-family: "Varela Round", sans-serif;
   font-size: 125%;
 }
@@ -1413,19 +1394,6 @@ body  {
   scroll-margin-top: 10vh;
 }
 
-#STEM {
-  padding-right: 10%;
-}
-
-#GUI {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-#ConsciOS {
-  padding-left: 10%;
-}
-
 .nav-buttons {
   vertical-align: middle;
   padding-top: 10px;
@@ -1433,7 +1401,7 @@ body  {
 
 .banner {
   background-image:
-      linear-gradient(to bottom, rgba(0,0,0,0.2), #2c2c2d),
+      linear-gradient(to bottom, rgba(0,0,0,0.2), var(--global-bg-color)),
       url('/assets/img/close_up.png'); /* Replace with your image path */
   background-repeat: no-repeat;
   background-position: center center; /* Center the image */
@@ -1442,9 +1410,9 @@ body  {
 }
 
 .focus {
-  background-image: linear-gradient(to bottom, #00f0c3D0, #00c0daB0);
+  background-image: linear-gradient(to bottom, var(--global-theme-color)D0, #00c0daB0);
   border-radius: 10px;
-  box-shadow: #2c2c2d;
+  box-shadow: var(--global-bg-color);
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 30px;
@@ -1455,7 +1423,7 @@ body  {
   margin: 20px 40px;
   padding: 10px 40px;
   border-radius: 10px;
-  background-color: #2c2c2d;
+  background-color: var(--global-bg-color);
 }
 
 #our-vision {
@@ -1472,10 +1440,12 @@ body  {
 
 .keyword {
   font-size: 150%;
+  color: var(--global-text-color-light) !important;
+
 }
 
 .keyphrase {
-  font-weight: bold;
+  color: var(--global-text-color-light) !important;
 }
 
 #v-centered-img {
@@ -1486,7 +1456,7 @@ body  {
 
 #stem-card {
   border-radius: 15px;
-  background-color: #1c1c1d;
+  background-color: var(--global-bg-accent);
   margin-bottom: 5%;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
 }
@@ -1507,21 +1477,26 @@ body  {
 }
 
 .key-name {
-  font-size: 200%;
+  color: var(--global-text-color-light) !important;
+  font-size: 150%;
   font-weight: bold;
 }
 
 .key-description {
+  color: var(--global-text-color-light) !important;
   text-align: left;
   font-size: 140%;
 }
 
 #stem-button {
-  background-color: #e8e8e8;
-  color: #1c1c1d;
+  background-color: var(--global-text-color-light);
+  color: var(--global-bg-accent);
   border-radius: 15px;
   padding: 10px 30px;
   font-size: 140%;
+}
+#stem-button:hover {
+  background-color: var(--global-text-color);
 }
 
 .gui {
@@ -1535,4 +1510,58 @@ body  {
   gap: 10px;                     /* Space between images */
   width: 100%;                   /* Optional: Adjust based on requirement */
   margin: auto;
+}
+
+#gui-img-centered {
+  display: flex;
+  justify-content: center;  /* Aligns horizontally center */
+  align-items: center;
+}
+
+.app-info {
+  margin-top: 5%;
+}
+
+#slogan {
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 120%;
+  color: var(--global-text-color-light) !important;
+}
+
+h1{
+  color: var(--global-text-color-light) !important;
+}
+
+h2{
+  color: var(--global-text-color-light) !important;
+}
+
+h3{
+  color: var(--global-text-color-light) !important;
+}
+
+.navbar {
+  background-color: var(--global-bg-accent);
+}
+
+#gui-btn-margin {
+  margin-top: 50px;
+}
+
+#gui-button {
+  background-color: var(--global-text-color-light);
+  color: var(--global-bg-color);
+  border-radius: 15px;
+  padding: 10px 30px;
+  font-size: 140%;
+}
+#gui-button:hover {
+  background-color: var(--global-text-color);
+}
+
+a:hover {
+  color: var(--global-theme-color) !important;
 }

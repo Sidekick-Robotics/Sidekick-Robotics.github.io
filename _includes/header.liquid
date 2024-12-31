@@ -99,7 +99,7 @@
                 <li class="nav-item {% if page.url contains parent_link %}active{% endif %}" >
                   {% if p.permalink contains '/blog/' %}{% assign url = '/blog/' %} {% else %}{% assign url = p.url %}{% endif %}
                   <div class="button_container" id="{{ p.title }}">
-                    <a class="nav-link" href="{{ '#' | append: p.title | append: '_info' }}">
+                    <a class="nav-link" href="{{ p.permalink | append: 'index.html' }}">
                     {{- p.title }}
                     </a>
                   </div>
