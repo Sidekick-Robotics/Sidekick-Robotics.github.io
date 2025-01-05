@@ -29,7 +29,7 @@ profile:
             <div id="stem-info-2">
                 <p class="key-name">SideKick STEM</p>
                 <p class="key-description">The ultimate robotics prototyping PCB.</p>
-                <a id="stem-button">Find out more</a>
+                <a id="stem-button" href="/STEM/index.html">Find out more</a>
             </div>
         </div>
         <div class="col-sm mt-2 mt-md-0 stem" id="v-centered-img">
@@ -59,10 +59,10 @@ profile:
                 <p><span class="keyword">Easy to read debugging. </span>While writing code for your embedded projects, errors are clearly identifiable via our terminal output. You can also enter any arduino cli command.</p>
             </div>
             <div id="gui-btn-margin">
-                <a id="gui-button">Find out more</a>
+                <a id="gui-button" href="/GUI/index.html">Find out more</a>
             </div>
         </div>
-        <div class="col-sm mt-2 mt-md-0" id="gui-img-centered">
+        <div class="col-sm mt-2 mt-md-0 center-img" id="gui-img-centered">
             <div class="grid-2-2">
                 <div class="gui-stock">
                     {%  include figure.liquid

@@ -1355,9 +1355,20 @@ body  {
   font-size: 125%;
 }
 
+#stem-product-img-main {
+  width: 60%;
+  aspect-ratio: 1/1 !important;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 @media (min-width: 1025px) { 
   #slogan {
     font-size: 300% !important;
+  }
+
+  .product-pg {
+    aspect-ratio: 7/6;
   }
 }
 
@@ -1386,6 +1397,14 @@ body  {
   #stem-description {
     text-align: center;
     font-size: 140%;
+  }
+
+  #stem-product-img-main {
+    width: 80%;
+  }
+
+  .product-pg {
+    aspect-ratio: 5/6 !important;
   }
 }
 
@@ -1512,12 +1531,6 @@ body  {
   margin: auto;
 }
 
-#gui-img-centered {
-  display: flex;
-  justify-content: center;  /* Aligns horizontally center */
-  align-items: center;
-}
-
 .app-info {
   margin-top: 5%;
 }
@@ -1547,6 +1560,12 @@ h3{
   background-color: var(--global-bg-accent);
 }
 
+.center-img {
+  display: flex;
+  justify-content: center;  /* Aligns horizontally center */
+  align-items: center;
+}
+
 #gui-btn-margin {
   margin-top: 50px;
 }
@@ -1564,4 +1583,25 @@ h3{
 
 a:hover {
   color: var(--global-theme-color) !important;
+}
+
+.stem-product-img {
+  width: 20%;
+  height: auto;
+  justify-content: center;
+  padding: 10px;
+}
+
+.product-pg {
+  border-radius: 20px;
+  background-color: var(--global-text-color-light);
+}
+
+.description {
+  padding-top: 5%;
+}
+
+#stem-stock-opt {
+  position: absolute;
+  box-sizing: border-box; 
 }
