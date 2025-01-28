@@ -92,3 +92,18 @@ profile:
         </div>
     </div>
 </div>
+<div class="ConsciOS">
+    <div class="row" id="gui-card">
+        <div class="col-sm mt-2 mt-md-0 center-img" id="os-stock">
+        </div>
+        <div class="col-sm mt-2 mt-md-0" id="conscios-info">
+            <h1>ConsciOS</h1>
+            <div class="os-info">
+                <p>Test para!</p>
+            </div>
+            <div id="os-btn-margin">
+                <a id="os-button" href="/ConsciOS/index.html">Find out more</a>
+            </div>
+        </div>
+    </div>
+</div>

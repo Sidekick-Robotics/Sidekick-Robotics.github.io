@@ -1605,3 +1605,26 @@ a:hover {
   position: absolute;
   box-sizing: border-box; 
 }
+
+#os-btn-margin {
+  margin-top: 50px;
+}
+
+#os-button {
+  background-color: var(--global-text-color-light);
+  color: var(--global-bg-color);
+  border-radius: 15px;
+  padding: 10px 30px;
+  font-size: 140%;
+}
+#os-button:hover {
+  background-color: var(--global-text-color);
+}
+
+.os-info {
+  margin-top: 5%;
+}
+
+#conscios-info {
+  margin-top: 5%;
+}
